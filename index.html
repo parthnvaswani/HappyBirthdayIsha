@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="shortcut icon"
+			href="./assets/favicon/favicon.ico"
+			type="image/x-icon"
+		/>
+		<meta name="theme-color" content="#166991" />
+		<meta
+			name="description"
+			content="Happy 24th Birthday, Isha! 🎉🎂 Explore this special space dedicated to celebrating a year older, a year wiser, and a year more fabulous! 🌟"
+		/>
+		<meta
+			name="og:description"
+			content="Happy 24th Birthday, Isha! 🎉🎂 Explore this special space dedicated to celebrating a year older, a year wiser, and a year more fabulous! 🌟"
+		/>
+		<meta name="og:url" content="%PUBLIC_URL%/" />
+		<meta name="og:title" content="Happy Birthday Isha" />
+		<meta
+			name="og:image"
+			content="./assets/favicon/android-chrome-512x512.png"
+		/>
+		<link rel="apple-touch-icon" href="./assets/favicon/apple-touch-icon.png" />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Happy Birthday Isha" />
+		<meta property="og:locale" content="en_US" />
+		<link rel="manifest" href="./assets/favicon/site.webmanifest" />
+
+		<title>Happy Birthday Isha</title>
+		<link rel="stylesheet" href="styles.css" />
+
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="preload">
+			<div id="preload-svg"></div>
+			<div id="click-svg"></div>
+		</div>
+
+		<button class="mute-btn">
+			<img src="./assets/images/mute.svg" alt="mute" />
+		</button>
+
+		<div class="main">
+			<div class="first-sec">
+				<h1 class="wish-text">
+					Happy 24<sup>th</sup> Birthday,<br />
+					Dr. Isha!
+				</h1>
+				<div id="birthday-card"></div>
+				<div id="confetti"></div>
+			</div>
+			<div id="rose"></div>
+			<div class="second-sec">
+				<svg
+					viewBox="0 0 1728 852"
+					fill="none"
+					preserveAspectRatio="xMidYMin slice"
+					id="rose-bg"
+				>
+					<defs>
+						<filter id="displacementFilter">
+							<feTurbulence
+								type="fractalNoise"
+								baseFrequency="0.01"
+								numOctaves="1"
+								result="noise"
+							/>
+							<feDisplacementMap
+								in="SourceGraphic"
+								in2="noise"
+								scale="50"
+								xChannelSelector="R"
+								yChannelSelector="G"
+							/>
+						</filter>
+						<mask id="circleMask">
+							<circle
+								cx="50%"
+								cy="100%"
+								r="0"
+								fill="white"
+								class="displacement"
+							/>
+						</mask>
+					</defs>
+
+					<image
+						xlink:href="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+						width="100%"
+						height="100%"
+						mask="url(#circleMask)"
+					/>
+				</svg>
+				<div class="wish-text-2">
+					<span>
+						On this special day, may your life bloom with the vibrant beauty and
+						grace of a rose. Your presence is like a delicate petal, adding
+						fragrance and color to the lives you touch. As a doctor, your
+						dedication to healing and caring for others reflects the true spirit
+						of a ruler, leading with compassion and kindness.
+					</span>
+					<span>
+						I hope you continue to embody the essence of your name – a
+						protector, a ruling goddess, and the very essence of life. Your
+						presence is a guiding light, bringing strength, warmth, and grace to
+						everyone around you.
+					</span>
+					<span>
+						May this year bring you countless moments as enchanting as the
+						petals of a rose, and may your path be adorned with success and joy.
+						Your dedication to healing and your kindness make you a rare and
+						cherished bloom in the garden of life.
+					</span>
+					<span>
+						Here's to a birthday filled with the sweet scent of roses, the
+						warmth of love, and the celebration of the wonderful person you are.
+						Cheers to you, Isha, the radiant rose in our lives! 🌹🎂💖
+					</span>
+				</div>
+			</div>
+		</div>
+
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"
+			integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+{
+	"name": "Happy Birthday Isha",
+	"short_name": "Happy Birthday Isha",
+    "start_url": "/",
+    "description": "Happy 24th Birthday, Isha! 🎉🎂 Explore this special space dedicated to celebrating a year older, a year wiser, and a year more fabulous! 🌟",
+	"icons": [
+		{
+			"src": "./android-chrome-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "./android-chrome-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"theme_color": "#166991",
+	"background_color": "#fff",
+	"display": "standalone"
+}
