@@ -13,11 +13,6 @@ html {
 
 body {
 	font-family: "Roboto", sans-serif;
-	overflow: hidden;
-
-	&.loaded {
-		overflow: auto;
-	}
 }
 
 .preload {

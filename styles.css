@@ -10,10 +10,6 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  overflow: hidden;
-}
-body.loaded {
-  overflow: auto;
 }
 
 .preload {

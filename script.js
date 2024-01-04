@@ -67,7 +67,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	preloadAnim.addEventListener("complete", function () {
 		happyBirthdayTune.play();
 		preload.classList.add("fade--out");
-		document.body.classList.add("loaded");
 	});
 
 	gift.addEventListener("click", function () {
