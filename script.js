@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		".displacement",
 		{
 			attr: {
-				r: 500,
+				r: 450,
 			},
 			duration: 1,
 		},
