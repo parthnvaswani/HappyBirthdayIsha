@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 	let mute = false;
 
-	const main = document.querySelector(".main");
 	const gift = document.querySelector("#preload-svg");
 	const click = document.querySelector("#click-svg");
 	const muteBtn = document.querySelector(".mute-btn");
@@ -9,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	const confetti = document.querySelector("#confetti");
 	const wishText = document.querySelector(".wish-text");
 	const rose = document.querySelector("#rose");
-	const wishText2 = document.querySelector(".wish-text-2");
 
 	const happyBirthdayTune = new Audio("./assets/audio/happy-birthday.mp3");
 	happyBirthdayTune.loop = true;
@@ -48,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		path: "./assets/lottiefiles/birthday-card.json",
 	});
 
-	const roseAnim = bodymovin.loadAnimation({
+	bodymovin.loadAnimation({
 		container: rose,
 		renderer: "svg",
 		loop: true,
@@ -114,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	gsap.registerPlugin(ScrollTrigger);
 
-	let tl = gsap.timeline({
+	const tl = gsap.timeline({
 		scrollTrigger: {
 			trigger: ".second-sec",
 			start: "top center",
